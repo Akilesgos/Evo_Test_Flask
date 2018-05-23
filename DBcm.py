@@ -1,12 +1,21 @@
 import psycopg2
 
 
-class UseDatabase():
+class ConnectionError(Exception):
+    pass
+
+
+class CredentialsError(Exception):
+    pass
+
+
+class UseDatabase:
     def __init__(self, dbname, user, password) -> 'None':
         self.dbconfig = {}
         self.dbconfig['dbname'] = dbname
         self.dbconfig['user'] = user
         self.dbconfig['password'] = password
+
     try:
         def __enter__(self) -> 'cursor':
             self.connect = psycopg2.connect(
@@ -25,11 +34,3 @@ class UseDatabase():
         self.connect.commit()
         self.cursor.close()
         self.connect.close()
-
-
-class ConnectionError(Exception):
-    pass
-
-
-class CredentialsError(Exception):
-    pass

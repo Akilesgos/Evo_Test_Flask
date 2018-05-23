@@ -1,9 +1,8 @@
 from flask import Flask
-import psycopg2
 from DBcm import UseDatabase
 
 app = Flask(__name__)
-app.config['dbconfig'] = ('evo', 'postgres', 'mettler24')
+app.config['dbconfig'] = ('*****', '*****', '*****')
 
 
 def log_request(req: 'flask_request', result: str) -> 'None':

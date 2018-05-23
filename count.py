@@ -10,6 +10,3 @@ def counts_worlds(phrase: str,) -> set:
         else:
             dct_holder[words] = 1
     return dct_holder
-
-
-

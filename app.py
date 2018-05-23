@@ -1,12 +1,12 @@
 from flask import Flask, request, render_template, redirect
-import psycopg2
 from count import counts_worlds
 from utils import log_request, data_from_Log
 
 
 app = Flask(__name__)
 
-app.config['dbconfig'] = ('evo', 'postgres', 'mettler24')
+
+app.config['dbconfig'] = ('*****', '*****', '*****')
 
 
 @app.route('/')
@@ -43,4 +43,3 @@ def view_the_log() -> 'html':
 
 if __name__ == "__main__":
     app.run()
-    db.create_all()
