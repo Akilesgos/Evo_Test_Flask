@@ -326,9 +326,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#59#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
