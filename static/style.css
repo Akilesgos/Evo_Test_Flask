@@ -1,0 +1,86 @@
+
+html{
+  padding-top: 25px;
+  background-image: url(./images/bg_page.png);
+}
+
+body {
+  width:80%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #E1EDEB;
+  box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+}
+
+form, #grayForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;  
+}
+
+input:focus { 
+  background-color: rgb(255, 204, 213); 
+}
+
+p {content: "ПОДСКАЗКА!" }
+p {content: "ПОДСКАЗКА!" }
+
+p::first-letter {
+  color:  #616161;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+::selection{
+  color: rgb(255, 255, 255);
+  background-color: #993366; 
+}
+
+h2 {
+  color: #B1967C;
+  font-weight: normal;
+  font-family: 'Gravitas One', 'Arial Black', serif;
+  font-size: 2.2em;
+  padding: 0 0 2px 60px;
+  margin: 0; 
+  margin-bottom: 10px; 
+  
+}
+
+a[hnhkhjhi] {
+  color: ;
+  font-weight: ;
+
+}
+
+input[type="TEXT"]:focus{
+  background-color: rgb(45, 204, 213);
+}
+
+
+tr:nth-child(odd) {
+
+}
+
+tr:
+/*
+start from: RE
+a[href^="http://"]
+
+
+type of document :
+a[href$=".pdf"] {
+     background-image: url(doc_icon.png) no-repeat;
+     padding-left: 15px;
+   };
+
+a[href^="http://"]:not([href^="http://mysite.com"])
+a[href^="http://"]:not([href*="mysite.com"])
+
+All object from:
+img[src*="headshot"]
+
+p:not(.classy) { color: blue; }
+*\

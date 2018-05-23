@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h2> {{ the_title }} </h2>
+
+<form method="POST" action="/viewlog">
+  <table>
+    <tr><td>Name:</td><td><input type="TEXT" name="Name" width="60"></td></tr>
+    <tr><td>Comment:</td><td> <textarea name="Comment" cols="50" rows="5"></textarea></td></tr>
+  </table>
+  <p>When you're ready, click this button:</p>
+  <input type="SUBMIT" value="Post comment">
+</form>
+ 
+{% endblock %}

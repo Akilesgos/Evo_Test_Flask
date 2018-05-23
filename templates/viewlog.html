@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+
+
+<h2> {{ the_title}} </h2>
+
+<p></p>
+<section id="grayForm"> 
+<table>
+  <tr><td>Name:</td><td>{{ the_name }}</td></tr>
+  <tr><td>Comment:</td><td>{{ the_comment }}</td></tr>
+  
+</table>
+<p>Results of this log is: {{ the_results }}</p>
+
+<h3>All log</h3>
+  <table border="1">
+    <tr>
+      {% for row_title in row_titles%}
+      <th> {{ row_title }}</th>
+      {% endfor %}
+    </tr>
+    {% for log_row in the_data %}
+    <tr>
+      {% for item in log_row %}
+      <td>{{ item }}</td>  
+      {% endfor %}   
+    </tr>         
+    {% endfor %}   
+  </table>
+  <table border="1">
+      
+</section>
+{% endblock %}
